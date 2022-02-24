@@ -152,12 +152,9 @@ CACHES = {
 }
 
 RQ_QUEUES = {
-    'high': {
+    'default': {
         'USE_REDIS_CACHE': 'default',
-    },
-    'low': {
-        'USE_REDIS_CACHE': 'default',
-    },
+    }
 }
 
 
