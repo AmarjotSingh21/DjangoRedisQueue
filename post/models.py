@@ -15,3 +15,11 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse("post:detail", kwargs={"id": self.id})
+
+
+class UrlShort(models.Model):
+    url = models.URLField(unique=True)
+    slug = models.SlugField(unique=True)
+
+    def __str__(self) -> str:
+        return f"{self.slug, self.url}"
