@@ -5,7 +5,6 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.views.generic import View, ListView
 from post.models import Post
 
-from django.views.decorators.cache import cache_page
 
 from django.utils.decorators import method_decorator
 
