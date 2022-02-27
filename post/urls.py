@@ -6,6 +6,6 @@ app_name = "post"
 
 urlpatterns = [
     path('top_stories/<int:x>/', TopNewsStories.as_view(), name="list"),
-    # path('<str:slug>/', GetNewsDetail.as_view(), name="detail"),
-    # path('posts/<int:id>/detail/', PostView.as_view(), name="detail"),
+    path('<str:slug>/', GetNewsDetail.as_view(), name="detail"),
+
 ]

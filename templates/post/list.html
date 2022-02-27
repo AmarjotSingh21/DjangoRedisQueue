@@ -1,9 +1,0 @@
-{% extends 'base.html' %}
-
-{% block body %}
-{% for post in posts %}
-<div><a href="{% url 'post:detail' post.id %}">{{post.title}}</a> </div>
-
-{% endfor %}
-
-{% endblock body %}
